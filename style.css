@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(blue, rgb(156, 104, 180), pink);
+}
+body{
+    display: grid;
+    grid-template-areas:"header header"
+                        "navigation navigation"
+                        "footer footer";
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-columns: 1fr;
+}
+input{
+  display: none;
+}
+.header{
+    background: rgb(106, 84, 228);
+    grid-area: header;
+}
+.navigation{
+    grid-area: navigation;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+.footer{
+    background: rgb(163, 93, 105);
+    grid-area: footer;
+}
+.nav__box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box1,
+.box2,
+.box3{
+    background-color: blueviolet;
+    width: 90%;
+    height: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+#bg_fone1:checked ~ .section{
+    background:url(img/mod1.png);
+    background-repeat: no-repeat;
+    background-size: 30% 65%;
+    background-position: 50% 50%;
+}
+#bg_fone2:checked ~ .section{
+    background:url(img/mod2.png);
+    background-repeat: no-repeat;
+    background-size: 30% 65%;
+    background-position: 50% 50%;
+}
+#bg_fone3:checked ~ .section{
+    background:url(img/mod3.png);
+    background-repeat: no-repeat;
+    background-size: 30% 65%;
+    background-position: 50% 50%;
+}
+#bg_fone4:checked ~ .section{
+    background:url(img/mod4.png);
+    background-repeat: no-repeat;
+    background-size: 30% 65%;
+    background-position: 50% 50%;
+}
+
+#bg_fone5:checked ~ .section{
+    background:url(img/jeans1.png);
+    background-repeat: no-repeat;
+    background-size: 30% 65%;
+    background-position: 50% 50%;
+}
+#bg_fone6:checked ~ .section{
+    background:url(img/jeans2.png);
+    background-repeat: no-repeat;
+    background-size: 30% 65%;
+    background-position: 50% 50%;
+}
+#bg_fone7:checked ~ .section{
+    background:url(img/jeans3.png);
+    background-repeat: no-repeat;
+    background-size: 20% 65%;
+    background-position: 50% 50%;
+}
+#bg_fone8:checked ~ .section{
+    background:url(img/jeans4.png);
+    background-repeat: no-repeat;
+    background-size: 30% 65%;
+    background-position: 50% 50%;
+}
+
+#bg_fone1:checked ~ #bg_fone5:checked ~ .section{
+    background:url(img/mod1.png), url(img/jeans1.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 21% 37%;
+    background-position: 50% 20%, 50% 71%;
+}
+#bg_fone1:checked ~ #bg_fone6:checked ~ .section{
+    background:url(img/mod1.png), url(img/jeans2.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 12% 37%;
+    background-position: 50% 20%, 50% 71%;
+}
+#bg_fone1:checked ~ #bg_fone7:checked ~ .section{
+    background:url(img/mod1.png), url(img/jeans3.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 10% 37%;
+    background-position: 50% 20%, 50% 71%;
+}
+#bg_fone1:checked ~ #bg_fone8:checked ~ .section{
+    background:url(img/mod1.png), url(img/jeans4.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 15% 37%;
+    background-position: 50% 20%, 50% 71%;
+}
+/*  */
+#bg_fone2:checked ~ #bg_fone5:checked ~ .section{
+    background:url(img/mod2.png), url(img/jeans1.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 28% 37%;
+    background-position: 50% 20%, 50% 75%;
+}
+#bg_fone2:checked ~ #bg_fone6:checked ~ .section{
+    background:url(img/mod2.png), url(img/jeans2.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 16% 37%;
+    background-position: 50% 20%, 50% 74%;
+}
+#bg_fone2:checked ~ #bg_fone7:checked ~ .section{
+    background:url(img/mod2.png), url(img/jeans3.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 14% 37%;
+    background-position: 50% 20%, 50% 75%;
+}
+#bg_fone2:checked ~ #bg_fone8:checked ~ .section{
+    background:url(img/mod2.png), url(img/jeans4.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 21% 37%;
+    background-position: 50% 20%, 50% 75%;
+}
+
+#bg_fone3:checked ~ #bg_fone5:checked ~ .section{
+    background:url(img/mod3.png), url(img/jeans1.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 27% 37%;
+    background-position: 50% 20%, 50% 74%;
+}
+#bg_fone3:checked ~ #bg_fone6:checked ~ .section{
+    background:url(img/mod3.png), url(img/jeans2.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 16% 37%;
+    background-position: 50% 20%, 50% 74%;
+}
+#bg_fone3:checked ~ #bg_fone7:checked ~ .section{
+    background:url(img/mod3.png), url(img/jeans3.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 13% 37%;
+    background-position: 50% 20%, 50.5% 74%;
+}
+#bg_fone3:checked ~ #bg_fone8:checked ~ .section{
+    background:url(img/mod3.png), url(img/jeans4.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 20% 37%;
+    background-position: 50% 20%, 50% 75%;
+}
+
+#bg_fone4:checked ~ #bg_fone5:checked ~ .section{
+    background:url(img/mod4.png), url(img/jeans1.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 21% 37%;
+    background-position: 50% 20%, 50% 71%;
+}
+#bg_fone4:checked ~ #bg_fone6:checked ~ .section{
+    background:url(img/mod4.png), url(img/jeans2.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 12% 37%;
+    background-position: 50% 20%, 50% 71%;
+}
+#bg_fone4:checked ~ #bg_fone7:checked ~ .section{
+    background:url(img/mod4.png), url(img/jeans3.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 10% 37%;
+    background-position: 50% 20%, 50% 71%;
+}
+#bg_fone4:checked ~ #bg_fone8:checked ~ .section{
+    background:url(img/mod4.png), url(img/jeans4.png);
+    background-repeat: no-repeat;
+    background-size: 15% 37%, 15% 37%;
+    background-position: 50% 20%, 50% 71%;
+}
+
+#active1,
+#active2,
+#active3{
+  height: 50%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 22px 59px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: stretch;
+  text-align: left;
+  justify-content: center;
+  
+}
+#active1 label,
+#active2 label,
+#active3 label{
+    border-radius: 10px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #bbb;
+}
+#active label:hover{
+    background: rgb(3, 161, 29);
+    border-color: #000000;
+}
+#bg_fone1:checked ~ .nav__box .box1 #active1  .for__bg1, 
+#bg_fone2:checked ~ .nav__box .box1 #active1  .for__bg2, 
+#bg_fone3:checked ~ .nav__box .box1 #active1  .for__bg3, 
+#bg_fone4:checked ~ .nav__box .box1 #active1  .for__bg4,
+#bg_fone5:checked ~ .nav__box .box2 #active2  .for__bg5, 
+#bg_fone6:checked ~ .nav__box .box2 #active2  .for__bg6, 
+#bg_fone7:checked ~ .nav__box .box2 #active2  .for__bg7, 
+#bg_fone8:checked ~ .nav__box .box2 #active2  .for__bg8{
+    background: rgb(3, 161, 29);
+    border-color: #000000;
+}
