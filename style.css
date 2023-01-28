@@ -37,14 +37,15 @@ input{
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
+    z-index: 5;
 }
 .box1,
 .box2,
 .box3{
     background-color: blueviolet;
-    width: 90%;
+    width: 200px;
     height: 32%;
     display: flex;
     flex-direction: column;
@@ -52,154 +53,161 @@ input{
     justify-content: space-around;
     flex-wrap: nowrap;
 }
+.section{
+    min-width: 150px;
+    width: 100%;
+    min-height: 350px;
+
+}
 #bg_fone1:checked ~ .section{
     background:url(img/mod1.png);
     background-repeat: no-repeat;
-    background-size: 30% 65%;
+    background-size: 400px 400px;
     background-position: 50% 50%;
 }
 #bg_fone2:checked ~ .section{
     background:url(img/mod2.png);
     background-repeat: no-repeat;
-    background-size: 30% 65%;
+    background-size: 400px 458px;
     background-position: 50% 50%;
 }
 #bg_fone3:checked ~ .section{
     background:url(img/mod3.png);
     background-repeat: no-repeat;
-    background-size: 30% 65%;
+    background-size: 400px 538px;
     background-position: 50% 50%;
 }
 #bg_fone4:checked ~ .section{
     background:url(img/mod4.png);
     background-repeat: no-repeat;
-    background-size: 30% 65%;
+    background-size: 400px 441px;
     background-position: 50% 50%;
 }
-
 #bg_fone5:checked ~ .section{
     background:url(img/jeans1.png);
     background-repeat: no-repeat;
-    background-size: 30% 65%;
+    background-size: 400px 400px;
     background-position: 50% 50%;
 }
 #bg_fone6:checked ~ .section{
     background:url(img/jeans2.png);
     background-repeat: no-repeat;
-    background-size: 30% 65%;
+    background-size: 400px 600px;
     background-position: 50% 50%;
 }
 #bg_fone7:checked ~ .section{
     background:url(img/jeans3.png);
     background-repeat: no-repeat;
-    background-size: 20% 65%;
+    background-size: 400px 693px;
     background-position: 50% 50%;
 }
 #bg_fone8:checked ~ .section{
     background:url(img/jeans4.png);
     background-repeat: no-repeat;
-    background-size: 30% 65%;
+    background-size: 400px 400px;
     background-position: 50% 50%;
 }
 
 #bg_fone1:checked ~ #bg_fone5:checked ~ .section{
     background:url(img/mod1.png), url(img/jeans1.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 21% 37%;
-    background-position: 50% 20%, 50% 71%;
+    background-size: 375px 375px, 500px 450px;
+    background-position: 50% 0%, 50% 100%;
+    max-width: 100%;
+    height: 100%;
 }
 #bg_fone1:checked ~ #bg_fone6:checked ~ .section{
     background:url(img/mod1.png), url(img/jeans2.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 12% 37%;
-    background-position: 50% 20%, 50% 71%;
+    background-size: 375px 375px, 310px 450px;
+    background-position: 50% 0%, 50% 100%;
 }
 #bg_fone1:checked ~ #bg_fone7:checked ~ .section{
     background:url(img/mod1.png), url(img/jeans3.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 10% 37%;
-    background-position: 50% 20%, 50% 71%;
+    background-size: 375px 375px, 250px 445px;
+    background-position: 50% 00%, 50% 100%;
 }
 #bg_fone1:checked ~ #bg_fone8:checked ~ .section{
     background:url(img/mod1.png), url(img/jeans4.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 15% 37%;
-    background-position: 50% 20%, 50% 71%;
+    background-size: 375px 375px, 380px 440px;
+    background-position: 50% 00%, 50% 100%;
 }
-/*  */
+
 #bg_fone2:checked ~ #bg_fone5:checked ~ .section{
     background:url(img/mod2.png), url(img/jeans1.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 28% 37%;
-    background-position: 50% 20%, 50% 75%;
+    background-size: 280px 340px, 490px 465px;
+    background-position: 50% 00%, 50% 100%;
 }
 #bg_fone2:checked ~ #bg_fone6:checked ~ .section{
     background:url(img/mod2.png), url(img/jeans2.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 16% 37%;
-    background-position: 50% 20%, 50% 74%;
+    background-size: 280px 340px, 330px 465px;
+    background-position: 50% 00%, 50% 100%;
 }
 #bg_fone2:checked ~ #bg_fone7:checked ~ .section{
     background:url(img/mod2.png), url(img/jeans3.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 14% 37%;
-    background-position: 50% 20%, 50% 75%;
+    background-size: 280px 340px, 270px 465px;
+    background-position: 50% 00%, 50% 100%;
 }
 #bg_fone2:checked ~ #bg_fone8:checked ~ .section{
     background:url(img/mod2.png), url(img/jeans4.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 21% 37%;
-    background-position: 50% 20%, 50% 75%;
+    background-size: 280px 340px, 400px 465px;
+    background-position: 50% 00%, 50% 100%;
 }
 
 #bg_fone3:checked ~ #bg_fone5:checked ~ .section{
     background:url(img/mod3.png), url(img/jeans1.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 27% 37%;
-    background-position: 50% 20%, 50% 74%;
+    background-size: 270px 340px, 480px 465px;
+    background-position: 50% 00%, 50% 100%;
 }
 #bg_fone3:checked ~ #bg_fone6:checked ~ .section{
     background:url(img/mod3.png), url(img/jeans2.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 16% 37%;
-    background-position: 50% 20%, 50% 74%;
+    background-size: 270px 340px, 300px 465px;
+    background-position: 50% 00%, 50% 100%;
 }
 #bg_fone3:checked ~ #bg_fone7:checked ~ .section{
     background:url(img/mod3.png), url(img/jeans3.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 13% 37%;
-    background-position: 50% 20%, 50.5% 74%;
+    background-size: 270px 340px, 240px 465px;
+    background-position: 50% 00%, 50% 100%;
 }
 #bg_fone3:checked ~ #bg_fone8:checked ~ .section{
     background:url(img/mod3.png), url(img/jeans4.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 20% 37%;
-    background-position: 50% 20%, 50% 75%;
+    background-size: 270px 340px, 380px 465px;
+    background-position: 50% 00%, 50% 100%;
 }
 
 #bg_fone4:checked ~ #bg_fone5:checked ~ .section{
     background:url(img/mod4.png), url(img/jeans1.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 21% 37%;
-    background-position: 50% 20%, 50% 71%;
+    background-size: 270px 340px, 460px 465px;
+    background-position: 50% 00%, 50% 100%;
 }
 #bg_fone4:checked ~ #bg_fone6:checked ~ .section{
     background:url(img/mod4.png), url(img/jeans2.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 12% 37%;
-    background-position: 50% 20%, 50% 71%;
+    background-size: 270px 340px, 280px 465px;
+    background-position: 50% 00%, 50% 100%;
 }
 #bg_fone4:checked ~ #bg_fone7:checked ~ .section{
     background:url(img/mod4.png), url(img/jeans3.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 10% 37%;
-    background-position: 50% 20%, 50% 71%;
+    background-size: 270px 340px, 230px 465px;
+    background-position: 50% 00%, 50% 100%;
 }
 #bg_fone4:checked ~ #bg_fone8:checked ~ .section{
     background:url(img/mod4.png), url(img/jeans4.png);
     background-repeat: no-repeat;
-    background-size: 15% 37%, 15% 37%;
-    background-position: 50% 20%, 50% 71%;
+    background-size: 270px 340px, 360px 465px;
+    background-position: 50% 00%, 50% 100%;
 }
 
 #active1,
